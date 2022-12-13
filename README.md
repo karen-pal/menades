@@ -16,9 +16,16 @@ if you dare to try.
 
 ## Prerequisites
 
-Install haskell,
+Install stack->haskell if you haven't already,
 
-Install the haskell library gloss and its dependencies,
+[Ref](https://docs.haskellstack.org/en/stable/install_and_upgrade/)
+
+Install the haskell library gloss and its dependencies:
+
+`stack install gloss`
+
+
+[More info](https://hackage.haskell.org/package/gloss)
 
 Read about the history of technology and its relation to "humanness".
 
@@ -30,7 +37,7 @@ Read about the history of technology and its relation to "humanness".
 
 `./Main`
 
-## Usage
+## More info
 
 ### Seed details
 Seeds have to be bmp files. In Linux, you can use the `imagemagick` tool to convert a png to bmp using the command
