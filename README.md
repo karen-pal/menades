@@ -60,7 +60,7 @@ I'll give you a few clues:
 To read more about this project, [consult these slides](https://docs.google.com/presentation/d/13Qb4pv03XYT_mUEkGlTB7VZeENPSqXbDxNuKmmtyvZA/edit?usp=sharing)
 
 
-# Detailed installation instructions thanks to marto! @marto-xyz
+# Detailed installation instructions thanks to [marto-xyz](https://github.com/marto-xyz) !
 ## Instalar Stack (el sistema de compilación de Haskell)
 Descargado desde: 👉 https://docs.haskellstack.org/en/stable/install_and_upgrade/
 
@@ -130,4 +130,4 @@ Pero el error persistió:
 
 Para esto copiar los archivos de las carpetas x64 (bin, lib) por las dudas, también copié los de la carpeta "INCLUDE"
 
-Special thanks to @marto-xyz for contributing these instructions and for the windows error solution.
+Special thanks to [@marto-xyz](https://github.com/marto-xyz) for contributing these instructions and for the windows error solution.
