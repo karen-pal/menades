@@ -58,3 +58,75 @@ I'll give you a few clues:
 
 ## More Information
 To read more about this project, [consult these slides](https://docs.google.com/presentation/d/13Qb4pv03XYT_mUEkGlTB7VZeENPSqXbDxNuKmmtyvZA/edit?usp=sharing)
+
+
+# Detailed installation instructions thanks to marto!
+## Instalar Stack (el sistema de compilación de Haskell)
+Descargado desde: 👉 https://docs.haskellstack.org/en/stable/install_and_upgrade/
+
+Luego confirmamos que funcione con:
+`stack --version`
+
+## Descargar el proyecto Menades
+Desde GitHub: 👉 https://github.com/karen-pal/menades
+Se puede descargar el zip, o hacer git clone. 
+
+Si es zip, lo descomprimimos en:
+`\PATH\TO\menades-master`
+
+En windows
+`C:\PATH\TO\menades-master`
+
+## Verificamos dependencias
+
+El proyecto depende de:
+
+- Gloss (para gráficos)
+- GLUT (librería de ventanas de OpenGL)
+- BMP files (imágenes que Menades usa para dibujar)
+
+Instalamos Gloss con:
+
+`stack install gloss`
+
+## Intentar ejecutar directamente
+
+Dentro de la carpeta del proyecto:
+
+`stack ghc -- Main.hs`
+En linux:
+`./Main`
+En windows:
+`Main.exe`
+
+## Troubleshooting
+### Error unknown GLUT entry glutInit en windows
+Si el programa abrió el menú:
+> ¿CON CUANTOS ARCHIVOS QUERES DIBUJAR? (1 O 2)
+pero al intentar abrir la ventana gráfica dio:
+
+`user error (unknown GLUT entry glutInit)`
+
+Intentamos reparar con FreeGLUT
+
+Descargamos FreeGLUT desde:👉 https://www.transmissionzero.co.uk/software/freeglut-devel/
+
+En windows descomprimimos y copiamos: `freeglut.dll`
+
+
+en la misma carpeta que el ejecutable:
+
+`C:\PATH\TO\menades-master`
+
+
+Luego recompilamos:
+
+`stack ghc -- Main.hs`
+
+
+Pero el error persistió:
+
+`user error (unknown GLUT entry glutInit)`
+
+Para esto copiar los archivos de las carpetas x64 (bin, lib) por las dudas, también copié los de la carpeta "INCLUDE"
+
